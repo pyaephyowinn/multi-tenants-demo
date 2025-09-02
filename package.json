@@ -1,0 +1,22 @@
+{
+  "name": "multi-tenants-demo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "scripts": {
+    "dev": "pnpm --parallel -r dev",
+    "build": "pnpm -r build",
+    "start": "pnpm --parallel -r start",
+    "typecheck": "pnpm -r typecheck",
+    "clean": "pnpm -r exec rm -rf node_modules && rm -rf node_modules pnpm-lock.yaml",
+    "install:all": "pnpm install",
+    "dev:api": "pnpm --filter api dev",
+    "dev:web": "pnpm --filter web dev",
+    "build:api": "pnpm --filter api build",
+    "build:web": "pnpm --filter web build"
+  },
+  "keywords": [],
+  "author": "Pyae Phyo Win",
+  "license": "ISC",
+  "packageManager": "pnpm@10.13.1"
+}
